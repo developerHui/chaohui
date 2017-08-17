@@ -6,24 +6,23 @@
 </head>
 <style>
 	*{margin:0;padding:0;}
-	.my-space-container{padding:200px;position:relative;}
-	.my-space{position:absolute;top:200px;left:200px;width:200px;height:200px;}
-	.space1{background:#f00;transform:rotateX(-33.5deg) rotateY(45deg);}
-	.space2{background:blue;transform:rotateX(33.5deg) rotateY(45deg);}
-	.space3{background:yellow;}
-	.space4{background:pink;}
-	.space5{background:brown;}
-	.space6{background:black;}
+	.my-space-container{padding:200px;}
+	.my-space{width:200px;height:200px;}
+	.space1{margin-left:200px;background:#f00;transform: rotateX(90deg);;transform-origin:bottom;}
+	.space2{float:left;background:blue;transform: rotateY(90deg);;transform-origin:right;}
+	.space3{float:left;background:yellow;}
+	.space4{float:left;background:pink;transform: rotateY(90deg);;transform-origin:left;}
+	.space5{float:left;background:brown;transform: translateZ(150px);}
+	.space6{margin-left:200px;clear:both;background:black;transform: rotateX(90deg);;transform-origin:top;}
 </style>
 <body>
 	<div class="my-space-container">
 		<div class="my-space space1"></div>
 		<div class="my-space space2"></div>
-		<!-- <div class="my-space space3"></div> -->
-		<!-- <div class="my-space space4"></div>
+		<div class="my-space space3"></div>
+		<div class="my-space space4"></div>
 		<div class="my-space space5"></div>
-		<div class="my-space space6"></div> -->
-
+		<div class="my-space space6"></div>
 	</div>
 </body>
 </html>
