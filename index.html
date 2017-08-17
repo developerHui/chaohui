@@ -3,28 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>个人GitHub</title>
-	<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
 </head>
 <style>
 	*{margin:0;padding:0;}
-	.my-space-container{padding:20px;}
-	.my-space{height:200px;margin:100px auto;padding-top:100px;border-radius:10px;box-shadow: 0px 0px 5px #ccc;font-size:14px;color:#666;text-align: center;}
-	.my-space p{line-height: 150%;}
+	.my-space-container{padding:200px;position:relative;}
+	.my-space{position:absolute;top:200px;left:200px;width:200px;height:200px;}
+	.space1{background:#f00;transform:rotateX(-33.5deg) rotateY(45deg);}
+	.space2{background:blue;transform:rotateX(33.5deg) rotateY(45deg);}
+	.space3{background:yellow;}
+	.space4{background:pink;}
+	.space5{background:brown;}
+	.space6{background:black;}
 </style>
 <body>
 	<div class="my-space-container">
-		<div class="my-space">
-			<p>Hello everyone.my name is Zhang chaohui.I'm chinese people.I'm 26 years old.I love my country.I love my people.</p>
-			<p>This is my first page for myself.It's funny.</p>
-			<p>I like English,but i can just say a little.If you like it too,just do it!</p>
-		</div>
+		<div class="my-space space1"></div>
+		<div class="my-space space2"></div>
+		<!-- <div class="my-space space3"></div> -->
+		<!-- <div class="my-space space4"></div>
+		<div class="my-space space5"></div>
+		<div class="my-space space6"></div> -->
+
 	</div>
-	<a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-    </a-scene>
 </body>
 </html>
