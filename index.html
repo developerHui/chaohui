@@ -4,70 +4,11 @@
 	<meta charset="UTF-8">
 	<title>个人GitHub</title>
 </head>
-<style>
-	*{margin: 0;padding: 0;}
-
-    .stage{position: relative;margin: 100px 0 0 200px;perspective: 800px;width: 200px;height: 200px;}
-    .container{width: 200px;height: 200px;position: absolute;transform-style:preserve-3d;transition: all 2s;}
-    .face{width: 100%;height: 100%;position: absolute;left: 0;top: 0;text-align: center;line-height: 200px;font-size: 50px;color: #fff;border: 1px solid #ccc;opacity: 1;background: #999;}
-    .f1{transform: rotateX(90deg) translateZ(100px);background:url(imgs/Chrysanthemum.jpg) no-repeat center center;background-size:300px auto;}
-    .f2{transform: rotateX(-90deg) translateZ(100px);background:url(imgs/Desert.jpg) no-repeat center center;background-size:300px auto;}
-    .f3{transform: rotateY(180deg) translateZ(100px);background:url(imgs/Hydrangeas.jpg) no-repeat center center;background-size:300px auto;}
-    .f4{transform: translateZ(100px);background:url(imgs/Koala.jpg) no-repeat center center;background-size:300px auto;}
-    .f5{transform: rotateY(90deg) translateZ(100px);background:url(imgs/Lighthouse.jpg) no-repeat center center;background-size:300px auto;}
-    .f6{transform: rotateY(-90deg) translateZ(100px);background:url(imgs/Penguins.jpg) no-repeat center center;background-size:300px auto;}
-    .trans-btn{display:none;width:80px;height:30px;margin-bottom:20px;line-height:30px;background:#50aeff;color:#fff;border:1px solid #50a9fe;border-radius:4px;outline:none;}
-    .test-div{position: absolute;left: 0;top: 0;width:200px;height:200px;margin:0 auto;background:#98fea0;border-radius:5px;text-align:center;line-height:200px;}
-</style>
+<link rel="stylesheet" href="css/banner.css">
+<script src="framework/libs/jquery-1.8.3.min.js"></script>
+<script src="framework/libs/angular.min.js"></script>
+<script src="framework/libs/angular-ui-router.min.js"></script>
 <body>
-	<div class="stage">
-		<button id="rotX" class="trans-btn">rotateX</button>
-		<div id="cont" class="container">
-			<div class="face f1">1</div>
-			<div class="face f2">2</div>
-			<div id="pic3" class="face f3">3</div>
-			<div class="face f4">4</div>
-			<div class="face f5">5</div>
-			<div class="face f6">6</div>
-		</div>
-		<button id="rotY" class="trans-btn">rotateY</button>
-	</div>
+	<div ui-view></div>
 </body>
-<script>
-	window.onload = function(){
-		var btnY = document.getElementById('rotY');
-	    var cont = document.getElementById('cont');
-	    var btnX = document.getElementById('rotX');
-	    var revrsePic = document.getElementById('pic3');
-	    var degY = 0;
-	    var degX = 0;
-	    btnY.addEventListener('click',function(){
-	        var timer = setInterval(function(){
-	        	degY += 90;
-	        	revrsePic.style.transform = 'rotateY(180deg) translateZ(100px)';
-	       		cont.style.transform = 'rotateY('+ degY +'deg)';
-	       		if(degY % 360 == 0){
-	       			degY = 0;
-	       			clearInterval(timer);
-	       			btnX.click();
-	       		}
-	        },2500)
-	    });
-	    btnX.addEventListener('click',function(){
-	        var timer = setInterval(function(){
-	        	degX += 90;
-		        cont.style.transform = 'rotateX('+ degX +'deg)';
-		        if(degX == 180){
-		        	revrsePic.style.transform = 'rotateX(180deg) translateZ(100px)';
-		        }
-		        if(degX % 360 == 0){
-		        	degX = 0;
-		        	clearInterval(timer);
-	       			btnY.click();
-		        }
-	        },2500)
-	    });
-	    btnY.click();
-	}
-</script>
 </html>
