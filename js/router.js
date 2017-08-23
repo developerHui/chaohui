@@ -4,10 +4,13 @@
 */
 testproject.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider){
 	$stateProvider
-
-		.state('banner',{
+		.state('test',{
+			url: 'index',
+			templateUrl: 'index.html'
+		})
+		.state('test.banner',{
 			url: '/banner',
-			templateUrl: 'tpls/square-banner.html',
+			templateUrl: '/tpls/square-banner.html',
 			controller: 'bannerController'
 		})
 }])
