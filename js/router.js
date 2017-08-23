@@ -4,11 +4,7 @@
 */
 testproject.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider){
 	$stateProvider
-		.state('test',{
-			url: 'index',
-			templateUrl: 'index.html'
-		})
-		.state('test.banner',{
+		.state('banner',{
 			url: '/banner',
 			templateUrl: '/tpls/square-banner.html',
 			controller: 'bannerController'
