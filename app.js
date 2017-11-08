@@ -4,16 +4,8 @@
 */
 var testproject = angular.module('huiproject',['ui.router']);
 
-// yuejuanyi.run(['$rootScope', '$state', '$stateParams','$templateCache', '$location', '$http', 'commonHttpService', 'commonService', function($rootScope, $state, $stateParams, $templateCache, $location, $http, commonHttpService, commonService){
-// 	$rootScope.$state = $state;
-// 	$rootScope.$stateParams = $stateParams;
+testproject.run(['$rootScope', '$state', '$stateParams','$templateCache', '$location', '$http', 'commonHttpService', 'commonService', function($rootScope, $state, $stateParams, $templateCache, $location, $http, commonHttpService, commonService){
+	$rootScope.$state = $state;
+	$rootScope.$stateParams = $stateParams;
 
-// }]);
-testproject.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider){
-	$stateProvider
-		.state('banner',{
-			url: '/banner',
-			templateUrl: '/tpls/square-banner.html',
-			controller: 'bannerController'
-		})
-}])
+}]);
