@@ -9,7 +9,7 @@ var testproject = angular.module('huiproject',['ui.router']);
 // 	$rootScope.$stateParams = $stateParams;
 
 // }]);
-huiproject.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider){
+testproject.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider){
 	$stateProvider
 		.state('banner',{
 			url: '/banner',
