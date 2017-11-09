@@ -12,7 +12,7 @@
 
 /**/
 .header{height:72px;background:#0dbbb1;color:#fff;}
-.header .logo{margin-left:50px;width:200px;height:72px;background:url(/imgs/name.png) no-repeat;}
+.header .logo{margin-left:50px;width:200px;height:72px;background:url(imgs/name.png) no-repeat;}
 .header .S{float:left;padding:0 20px;height:72px;line-height: 72px;cursor:default;}
 .header .S:hover{background:#fff;color:#0dbbb1;}
 
