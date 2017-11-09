@@ -6,7 +6,7 @@ testproject.config(['$stateProvider','$urlRouterProvider',function($stateProvide
 	$stateProvider
 		.state('banner',{
 			url: '/banner',
-			templateUrl: '/tpls/square-banner.html',
+			templateUrl: 'tpls/square-banner.html',
 			controller: 'bannerController'
 		})
 }]);
