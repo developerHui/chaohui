@@ -10,13 +10,15 @@
 .trans-btn{display:none;width:80px;height:30px;margin-bottom:20px;line-height:30px;background:#50aeff;color:#fff;border:1px solid #50a9fe;border-radius:4px;outline:none;}
 .test-div{position: absolute;left: 0;top: 0;width:200px;height:200px;margin:0 auto;background:#98fea0;border-radius:5px;text-align:center;line-height:200px;}
 
-/**/
+/*头部导航*/
 .header{height:72px;background:#0dbbb1;color:#fff;}
-.header .logo{margin-left:50px;width:200px;height:72px;background:url(../imgs/name.png) no-repeat;}
+.header .logo{width:200px;height:72px;background:url(../imgs/name.png) no-repeat;}
 .header .S{float:left;padding:0 20px;height:72px;line-height: 72px;cursor:default;}
 .header .S:hover{background:#fff;color:#0dbbb1;}
 
-
+/*前端开发*/
+.front-end{min-height: 200px;margin-top:40px;box-shadow: 0 0 15px #ccc;}
+.front-end-text{text-indent:30px;width:620px;text-align: justify;}
 
 
 
