@@ -12,13 +12,14 @@
 
 /*头部导航*/
 .header{height:72px;background:#0dbbb1;color:#fff;}
-.header .logo{width:200px;height:72px;background:url(../imgs/name.png) no-repeat;}
-.header .S{float:left;padding:0 20px;height:72px;line-height: 72px;cursor:default;}
+/*.header .logo{width:200px;height:72px;background:url(../imgs/name.png) no-repeat;}*/
+.header .logo{width:200px;height:72px;font-size:30px;text-align:center;line-height:72px;}
+.header .S{float:left;padding:0 20px;height:72px;line-height: 72px;color:#fff;}
 .header .S:hover{background:#fff;color:#0dbbb1;}
 
 /*前端开发*/
-.front-end{min-height: 200px;margin-top:40px;box-shadow: 0 0 15px #ccc;}
-.front-end-text{text-indent:30px;width:620px;text-align: justify;}
+.container-box{min-height: 200px;margin-top:40px;box-shadow: 0 0 15px #ccc;}
+.container-text{text-indent:30px;width:620px;text-align: justify;}
 
 
 
